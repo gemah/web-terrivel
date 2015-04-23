@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Loja Virtual de Pedras</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Encomenda de Pedras</h1>
+        <br>
+        <h1>GET</h1>
+        <form class="encomenda" action="http://terrivel.herokuapp.com/monster" method="GET">
+            <span>Dados de Pedra</span><br>
+            <label for="num_pedras"> Número de Pedras: </label>
+            <input name="num_pedras" type="number" min="0">
+            <br>
+            <label for="tam_pedras">Tamanho das pedras:</label>
+            <input name="tam_pedras" type="number" min="1" max="7" step="0.5" value="3">
+            <br>
+            <label for="tipo_pedras"> Tipos de Pedras:</label>
+            <select name="tipo_pedras">
+                <option value="marroada" selected="">Marroada</option>
+                <option value="ametista">Ametista</option>
+                <option value="topazio">Topázio</option>
+                <option value="espinela">Espinela</option>
+            </select>
+            <label> Pedras Sortidas? <input type="checkbox" value="sim"></label>
+            <br><br>
+            <span>Outros Dados</span><br>
+            <label for="nome">Nome do Monstro</label>
+            <input name="nome" type="text" maxlength="255" pattern="[A-Za-z- ]+">
+            <br>
+            <label for="corCeu1">Cor do Céu 1:</label> <input name="corCeu1" type="color">
+            <label for="corCeu2">Cor do Céu 2:</label> <input name="corCeu2" type="color">
+            <br><br>
+            <button type="reset">Reiniciar</button><button type="submit">Enviar</button>
+        </form>
+        <br><br><br>
+        <h1>POST</h1>
+        <form class="encomenda" action="http://terrivel.herokuapp.com/monster" method="POST">
+            <span>Dados de Pedra</span><br>
+            <label for="num_pedras"> Número de Pedras: </label>
+            <input name="num_pedras" type="number" min="0">
+            <br>
+            <label for="tam_pedras">Tamanho das pedras:</label>
+            <input name="tam_pedras" type="number" min="1" max="7" step="0.5" value="3">
+            <br>
+            <label for="tipo_pedras"> Tipos de Pedras:</label>
+            <select name="tipo_pedras">
+                <option value="marroada" selected="">Marroada</option>
+                <option value="ametista">Ametista</option>
+                <option value="topazio">Topázio</option>
+                <option value="espinela">Espinela</option>
+            </select>
+            <label> Pedras Sortidas? <input type="checkbox" value="sim"></label>
+            <br><br>
+            <span>Outros Dados</span><br>
+            <label for="nome">Nome do Monstro</label>
+            <input name="nome" type="text" maxlength="255" pattern="[A-Za-z- ]+">
+            <br>
+            <label for="corCeu1">Cor do Céu 1:</label> <input name="corCeu1" type="color">
+            <label for="corCeu2">Cor do Céu 2:</label> <input name="corCeu2" type="color">
+            <br><br>
+            <button type="reset">Reiniciar</button><button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+/* Cascading Stylesheet File */
+body{
+    font-family: 'Georgia', serif;
+}
+
+h1{
+    font-size: 200%;
+    font-weight: bold;
+    padding-left:15%;
+}
+
+span{
+    font-style: italic;
+}
+
+.encomenda{
+    margin-left:10%;
+    line-height: 2.5em;
+}
